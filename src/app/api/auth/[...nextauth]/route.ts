@@ -38,6 +38,7 @@ const authOptions = {
             }
         })
     ],
+    site: process.env.NEXTAUTH_URL,
     callbacks: {
         async signIn({user, account}: {user: User | UserCredentials, account: Account | null}) {
             console.log("User: ", user)
