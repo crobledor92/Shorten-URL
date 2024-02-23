@@ -1,7 +1,6 @@
-import { appendFileSync } from "fs";
 import React from "react";
 
-const PlusIcon = ({className}) => {
+const PlusIcon = ({ className }: {className: string}) => {
   
   return (
     <svg

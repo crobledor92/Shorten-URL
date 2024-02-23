@@ -1,6 +1,6 @@
 import React from "react";
 
-const CopyIcon = ({ className }) => {
+const CopyIcon = ({ className }: { className: string}) => {
   return (
     <svg
       viewBox="0 0 24 24"
