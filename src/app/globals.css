@@ -1,33 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@200;400;600;900&family=Protest+Riot&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
   }
 }
+/* 
+.card {
+  @apply w-64 h-[284px] rounded px-3 py-12 text-center flex flex-col gap-4 shadow-md bg-slate-200
+} */
+
+.link-animation-on-hover {
+  @apply transition-transform duration-100 transform-gpu hover:scale-105
+}
+
+/* On scroll animation */
+.animate-on-scroll {
+  view-timeline-name: --section;
+  view-timeline-axis: block;
+
+  animation-timeline: --section;
+  animation-name: show;
+
+  animation-range: entry 25% cover 35%;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  },
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+/* Two sides card animation */
+.card_rotate_animation {
+  
+  position: relative;
+
+  .side {
+    transition: all .8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+  }
+
+  .front {
+    @apply w-64 h-full rounded px-3 py-12 text-center flex flex-col gap-4 shadow-md bg-slate-200
+  }
+
+  .back  {
+    transform: rotateY(180deg);
+    @apply w-64 h-full rounded px-3 py-12 text-center flex items-center shadow-md
+  }
+
+  &:hover {
+    .front {
+      transform: rotateY(-180deg);
+    }
+    .back {
+      transform: rotateY(0deg);
+    }
+
+  }
+  
+  /*Give an apropiate perspective */
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+}
+
+
