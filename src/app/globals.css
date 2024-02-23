@@ -73,12 +73,10 @@
     .back {
       transform: rotateY(0deg);
     }
-
   }
   
   /*Give an apropiate perspective */
   perspective: 150rem;
   -moz-perspective: 150rem;
 }
-
 

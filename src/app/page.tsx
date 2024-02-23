@@ -52,59 +52,61 @@ export default function Home() {
             </article>
             <article className="w-64 h-[284px] card_rotate_animation">
               <div className="side front">
-              <p className="text-5xl">📊</p>
-              <h3 className="mb-8">Real-Time Analytics</h3>
-              <p>
-                Curious about how your links are performing?
-              </p>
-              </div>
-              <div className="side back bg-orange-400">
-              <p>
-                Our powerful analytics dashboard gives you real-time insights into the number of clicks, geographic locations, referral sources, and more. Understand your audience and optimize your strategy.
-              </p>
-              </div>
-            </article>
-            <article className="w-64 h-[284px] card_rotate_animation">
-              <div className="side front">
-              <p className="text-5xl">📈</p>
-              <h3 className="mb-8">Comprehensive Data</h3>
-              <p>
-                Go beyond click counts.
-              </p>
+                <p className="text-5xl">📊</p>
+                <h3 className="mb-8">Real-Time Analytics</h3>
+                <p>Curious about how your links are performing?</p>
               </div>
               <div className="side back bg-orange-400">
                 <p>
-                  Shorten URL provides comprehensive data to help you analyze user behavior. Track unique clicks, conversion rates, and popular platforms, empowering you to make informed decisions.
+                  Our powerful analytics dashboard gives you real-time insights
+                  into the number of clicks, geographic locations, referral
+                  sources, and more. Understand your audience and optimize your
+                  strategy.
                 </p>
               </div>
             </article>
             <article className="w-64 h-[284px] card_rotate_animation">
               <div className="side front">
-              <p className="text-5xl">🛡️</p>
-              <h3 className="mb-8">Secure and Reliable</h3>
-              <p>
-                Rest easy knowing that your shortened URLs are secure and
-                reliable.
-              </p>
+                <p className="text-5xl">📈</p>
+                <h3 className="mb-8">Comprehensive Data</h3>
+                <p>Go beyond click counts.</p>
               </div>
               <div className="side back bg-orange-400">
                 <p>
-                  Our advanced infrastructure ensures the stability and availability of your links, with the option to set custom expiration dates for added control.
+                  Shorten URL provides comprehensive data to help you analyze
+                  user behavior. Track unique clicks, conversion rates, and
+                  popular platforms, empowering you to make informed decisions.
                 </p>
               </div>
             </article>
             <article className="w-64 h-[284px] card_rotate_animation">
               <div className="side front">
-              <p className="text-5xl">🔗</p>
-              <h3 className="mb-8"> Custom Short URLs</h3>
-              <p>
-                Personalize your short URLs to enhance brand visibility.
-              </p>
+                <p className="text-5xl">🛡️</p>
+                <h3 className="mb-8">Secure and Reliable</h3>
+                <p>
+                  Rest easy knowing that your shortened URLs are secure and
+                  reliable.
+                </p>
               </div>
               <div className="side back bg-orange-400">
-              <p>
-                Choose custom aliases that resonate with your audience, reinforcing your brand identity with every click.
-              </p>
+                <p>
+                  Our advanced infrastructure ensures the stability and
+                  availability of your links, with the option to set custom
+                  expiration dates for added control.
+                </p>
+              </div>
+            </article>
+            <article className="w-64 h-[284px] card_rotate_animation">
+              <div className="side front">
+                <p className="text-5xl">🔗</p>
+                <h3 className="mb-8"> Custom Short URLs</h3>
+                <p>Personalize your short URLs to enhance brand visibility.</p>
+              </div>
+              <div className="side back bg-orange-400">
+                <p>
+                  Choose custom aliases that resonate with your audience,
+                  reinforcing your brand identity with every click.
+                </p>
               </div>
             </article>
           </div>
